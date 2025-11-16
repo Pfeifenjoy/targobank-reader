@@ -1,5 +1,5 @@
 {
-	"name": "targobank-reader",
+	"name": "@arwed/targobank-reader",
 	"version": "0.1.0",
 	"description": "Convert Targobank PDF statements to hledger journal format",
 	"keywords": [
