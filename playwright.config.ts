@@ -1,3 +1,7 @@
+/**
+ * @file Playwright test configuration
+ */
+
 import { defineConfig } from '@playwright/test'
 
 export default defineConfig({

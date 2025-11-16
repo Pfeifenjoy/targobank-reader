@@ -1,6 +1,13 @@
+/**
+ * @file Command-line interface implementation
+ */
+
 import { Command } from 'commander'
 
-export async function cli(): Promise<void> {
+/**
+ * Main CLI function that sets up and runs the command-line interface
+ */
+export const cli = async (): Promise<void> => {
 	const program = new Command()
 
 	program
