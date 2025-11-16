@@ -10,5 +10,5 @@
 		"Arwed",
 		"Mett"
 	],
-	"ignorePaths": ["node_modules", "dist", "coverage", "*.lock"]
+	"ignorePaths": ["node_modules", "dist", "coverage", "test-results", "*.lock"]
 }
