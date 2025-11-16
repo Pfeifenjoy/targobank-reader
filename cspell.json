@@ -1,0 +1,6 @@
+{
+	"version": "0.2",
+	"language": "en",
+	"words": ["targobank", "hledger", "tseslint", "tsparser", "REWE"],
+	"ignorePaths": ["node_modules", "dist", "coverage", "*.lock"]
+}
