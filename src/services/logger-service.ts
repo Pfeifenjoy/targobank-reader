@@ -3,6 +3,7 @@
  */
 
 import winston from "winston"
+import { type Environment } from "../schemas/index.js"
 
 /**
  * Logger service for application logging
@@ -13,7 +14,7 @@ export class LoggerService {
 	/**
 	 * Create a new logger service instance
 	 */
-	constructor() {
+	constructor(environment: Environment) {
 		this.logger = winston.createLogger({
 			level: "info",
 			format: winston.format.combine(
@@ -24,6 +25,7 @@ export class LoggerService {
 			transports: [
 				new winston.transports.Console({
 					format: winston.format.simple(),
+					silent: environment.NODE_ENV === "test",
 				}),
 			],
 		})

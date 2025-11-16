@@ -10,4 +10,5 @@ export default defineConfig({
 	use: {
 		headless: true,
 	},
+	reporter: [["list", { printSteps: false }]],
 })

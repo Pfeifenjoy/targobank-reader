@@ -1,11 +1,12 @@
 /**
- * @file Basic tests for targobank-reader
+ * @file Tests for main index exports
  */
 
 import { test, expect } from "@playwright/test"
+import * as index from "../src/index.js"
 
-test.describe("Basic test", () => {
-	test("should pass", () => {
-		expect(true).toBe(true)
+test.describe("Index exports", () => {
+	test("should import index without errors", () => {
+		expect(index).toBeDefined()
 	})
 })

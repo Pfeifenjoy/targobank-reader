@@ -4,9 +4,15 @@
  * @file CLI entry point for targobank-reader
  */
 
-import { LoggerService, CliService } from "./services/index.js"
+import {
+	LoggerService,
+	CliService,
+	EnvironmentService,
+} from "./services/index.js"
 
-const logger = new LoggerService()
+const environmentService = new EnvironmentService()
+const environment = environmentService.getEnvironment()
+const logger = new LoggerService(environment)
 const cliService = new CliService(logger)
 
 try {

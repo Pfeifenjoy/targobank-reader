@@ -27,15 +27,6 @@ export class CliService {
 			.description("Convert Targobank PDF statements to hledger journal format")
 			.version(metadata.version)
 
-		program
-			.command("convert")
-			.description("Convert PDF statement to hledger format")
-			.argument("<file>", "PDF file to convert")
-			.option("-o, --output <file>", "Output file (default: stdout)")
-			.action(() => {
-				this.logger.info("Not implemented yet")
-			})
-
 		return program
 	}
 }

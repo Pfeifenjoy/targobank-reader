@@ -3,3 +3,4 @@
  */
 
 export * from "./package-json.js"
+export * from "./environment.js"

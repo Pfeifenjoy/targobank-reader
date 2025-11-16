@@ -24,7 +24,7 @@
 		"test:lint:prettier": "npx prettier --check .",
 		"test:lint:spell": "npx cspell .",
 		"test:lint": "npm run test:lint:prettier && npm run test:lint:eslint && npm run test:lint:spell",
-		"test:unit": "c8 npx playwright test",
+		"test:unit": "NODE_ENV=test c8 npx playwright test",
 		"test": "npm run test:lint && npm run test:unit",
 		"release": "npm run clean && npm run build && npm run test",
 		"prepare": "husky"
@@ -55,6 +55,13 @@
 		"lines": 100,
 		"functions": 100,
 		"branches": 100,
-		"statements": 100
+		"statements": 100,
+		"include": [
+			"src/**/*.ts"
+		],
+		"exclude": [
+			"src/bin.ts"
+		],
+		"all": true
 	}
 }
