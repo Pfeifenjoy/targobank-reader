@@ -7,6 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![cspell](https://img.shields.io/badge/spell%20checked-cspell-brightgreen.svg)](https://github.com/streetsidesoftware/cspell)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/istanbuljs/c8)
 
 ## ✨ Planned Features
 
