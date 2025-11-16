@@ -1,6 +1,14 @@
 {
 	"version": "0.2",
 	"language": "en",
-	"words": ["targobank", "hledger", "tseslint", "tsparser", "REWE"],
+	"words": [
+		"targobank",
+		"hledger",
+		"tseslint",
+		"tsparser",
+		"REWE",
+		"Arwed",
+		"Mett"
+	],
 	"ignorePaths": ["node_modules", "dist", "coverage", "*.lock"]
 }
