@@ -3,17 +3,20 @@
  */
 
 import { Command } from 'commander'
+import { MetadataService } from './services/index.js'
 
 /**
  * Main CLI function that sets up and runs the command-line interface
  */
 export const cli = async (): Promise<void> => {
 	const program = new Command()
+	const metadataService = new MetadataService()
+	const metadata = await metadataService.getMetadata()
 
 	program
 		.name('targobank-reader')
 		.description('Convert Targobank PDF statements to hledger journal format')
-		.version('0.1.0')
+		.version(metadata.version)
 
 	program
 		.command('convert')
