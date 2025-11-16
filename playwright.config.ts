@@ -2,10 +2,10 @@
  * @file Playwright test configuration
  */
 
-import { defineConfig } from '@playwright/test'
+import { defineConfig } from "@playwright/test"
 
 export default defineConfig({
-	testDir: './test',
+	testDir: "./test",
 	timeout: 30000,
 	use: {
 		headless: true,

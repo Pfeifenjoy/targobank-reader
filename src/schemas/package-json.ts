@@ -2,7 +2,7 @@
  * @file Package.json schema definition
  */
 
-import { z } from 'zod'
+import { z } from "zod"
 
 /**
  * Schema for package.json structure

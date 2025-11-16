@@ -4,9 +4,12 @@
  * @file CLI entry point for targobank-reader
  */
 
-import { cli } from './cli.js'
+import { cli } from "./cli.js"
+import { LoggerService } from "./services/index.js"
 
-cli().catch((error) => {
-	console.error(error.message)
+const logger = new LoggerService()
+
+cli(logger).catch((error) => {
+	logger.error("CLI error", error)
 	process.exit(1)
 })
